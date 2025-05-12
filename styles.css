@@ -8,7 +8,7 @@ body {
     
 }
 
-/* ===== HEADER CORREGIDO ===== */
+/* ===== HEADER ===== */
 header {
     background-color: #578E7E;
     position: fixed;
@@ -25,7 +25,7 @@ header {
     padding: 0;
 }
 
-/* Menú escritorio - Centrado correctamente */
+/* Menú escritorio */
 .desktop-menu ul {
     display: flex;
     gap: 60px;
@@ -137,7 +137,7 @@ header {
     margin: 0;
 }
 
-/* ===== PROYECTOS CORREGIDOS ===== */
+/* ===== PROYECTOS ===== */
 #projects {
     padding: 50px 20px;
     background-color: #FFFAEC;
@@ -389,7 +389,7 @@ a {
     text-decoration: none !important;
 }
 
-/* Agrega estos estilos al CSS */
+
 #about {
     padding: 50px 20px;
     background-color: #FFFAEC;
@@ -477,7 +477,86 @@ a {
     }
 }
 
-/* Agrega estos estilos al CSS */
+/* ===== CERTIFICADOS ===== */
+#certificados {
+    padding: 50px 20px;
+    background-color: #FFFAEC;
+    text-align: center;
+}
+#certificados h1 {
+    font-size: 2.5rem;
+    padding: 50px 20px;
+    color: #3D3D3D;
+    background-color: #FFFAEC;
+    text-align: center; /* Asegura consistencia con otros títulos */
+}
+
+.certificates {
+    padding: 50px 20px;
+    background-color: #FFFAEC;
+    text-align: center;
+    border-radius: 10px; /* Añade un toque de diseño consistente */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Similar a otras secciones */
+    text-decoration: none;
+}
+
+/* Responsive para la sección CERTIFICADOS */
+@media (max-width: 768px) {
+    #certificados {
+        padding: 30px 15px; /* Reduce el padding para pantallas más pequeñas */
+    }
+
+    #certificados h1 {
+        font-size: 2rem; /* Ajusta el tamaño del título */
+        padding: 30px 15px;
+    }
+
+    .certificates {
+        padding: 30px 15px; /* Reduce el padding interno */
+    }
+
+    .certificates a {
+        display: block; /* Asegura que los enlaces ocupen todo el ancho */
+        margin: 0 auto; /* Centra los enlaces */
+    }
+
+    .certificates img {
+        width: 100%; /* Asegura que las imágenes sean responsivas */
+        height: auto;
+    }
+
+    .certificates h2 {
+        font-size: 1.5rem; /* Ajusta el tamaño del subtítulo */
+    }
+
+    .certificates p {
+        font-size: 1rem; /* Ajusta el tamaño del texto */
+    }
+}
+
+@media (max-width: 480px) {
+    #certificados {
+        padding: 20px 10px; /* Reduce aún más el padding */
+    }
+
+    #certificados h1 {
+        font-size: 1.8rem; /* Ajusta el tamaño del título para pantallas muy pequeñas */
+    }
+
+    .certificates {
+        padding: 20px 10px; /* Reduce el padding interno */
+    }
+
+    .certificates h2 {
+        font-size: 1.2rem; /* Ajusta el tamaño del subtítulo */
+    }
+
+    .certificates p {
+        font-size: 0.9rem; /* Ajusta el tamaño del texto */
+    }
+}
+
+
 #contact {
     padding: 50px 20px;
     background-color: #FFFAEC;
@@ -546,8 +625,9 @@ a {
 
 @media (max-width: 480px) {
     .contact-link {
-        width: 100%;
+        width: 50%;
         justify-content: center;
+        text-align: center;
     }
     
     #contact h1 {
